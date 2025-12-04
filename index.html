@@ -3,76 +3,112 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KSB Resume Website</title>
+    <title>Kuber Singh Bisht | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background: #f4f4f4;
+            font-family: "Segoe UI", sans-serif;
+            background: #f2f5f9;
+            color: #333;
+            overflow-x: hidden;
         }
+        /* HEADER */
         header {
-            background: #333;
+            background: linear-gradient(135deg, #003973, #005fa3);
             color: white;
-            padding: 20px;
+            padding: 70px 20px;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            animation: zoomIn 1.4s ease-in-out;
+        }
+        header h1 {
+            margin: 15px 0 5px;
+            font-size: 42px;
+            animation: slideDown 1s ease-in-out;
+        }
+        header p {
+            font-size: 20px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #003973;
+            padding: 12px;
             text-align: center;
         }
-        section {
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* SECTIONS */
+        .section {
+            max-width: 1000px;
+            margin: 40px auto;
             background: white;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            animation: fadeUp 1.1s ease-in-out;
         }
         h2 {
-            color: #333;
+            margin-top: 0;
+            border-left: 5px solid #003973;
+            padding-left: 10px;
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
-        }
-        ul {
-            line-height: 1.8;
+
+        /* ANIMATIONS */
+        @keyframes fadeIn { from { opacity:0;} to {opacity:1;} }
+        @keyframes fadeUp { from { transform:translateY(40px); opacity:0;} to {transform:translateY(0); opacity:1;} }
+        @keyframes slideDown { from {transform:translateY(-40px);} to {transform:translateY(0);} }
+        @keyframes zoomIn { from {transform:scale(0.5);} to {transform:scale(1);} }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #003973;
+            color: white;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="profile.jpg" alt="Profile Photo" />
         <h1>Kuber Singh Bisht</h1>
-        <p>Data Analyst | MIS Specialist | ICT Expert</p>
+        <p>Data Analyst | Monitoring & Evaluation Specialist</p>
     </header>
 
-    <div class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>I am a Data Analyst with strong experience in MIS, Google Sheets, Excel, Python, SQL, and program monitoring. Passionate about technology, data-driven decisions, and environmental causes.</p>
-        </section>
+    <nav>
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="about.html"><i class="fa fa-user"></i> About</a>
+        <a href="skills.html"><i class="fa fa-code"></i> Skills</a>
+        <a href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
+    </nav>
 
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Data Analysis, Monitoring & Evaluation</li>
-                <li>Python, SQL, Google Sheets, Excel</li>
-                <li>Dashboard Creation (Google Data Studio, Power BI)</li>
-                <li>Documentation & Reporting</li>
-                <li>ICT Support & Training</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li><b>Data Analyst – Jhpiego</b> (Climate Change & Human Health Program)</li>
-                <li>Worked in education databases – AIF & Save the Children</li>
-                <li>15 years of experience in administration, teaching & ICT roles</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Contact</h2>
-            <p>Email: ksbsep2018@gmail.com</p>
-            <p>Location: Delhi, India</p>
-        </section>
+    <div class="section">
+        <h2>Welcome</h2>
+        <p>This is the homepage of my portfolio. Use the menu above to explore more sections of my work and background.</p>
     </div>
+
+    <footer>
+        © 2025 | Designed by Kuber Singh Bisht
+    </footer>
 </body>
 </html>
